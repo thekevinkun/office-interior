@@ -17,6 +17,6 @@
 
 @layer base {
   body {
-    @apply bg-white font-oswald text-black-1 font-medium text-base;
+    @apply bg-white font-oswald font-light text-black-1 text-base;
   }
 }

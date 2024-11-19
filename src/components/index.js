@@ -1,3 +1,4 @@
 import Button from "./Button";
+import Tagline from "./Tagline";
 
-export { Button };
+export { Button, Tagline };

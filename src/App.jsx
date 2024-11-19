@@ -6,11 +6,11 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <Showcase />
+        {/* <Showcase />
         <Sells />
-        <Blog />
+        <Blog /> */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

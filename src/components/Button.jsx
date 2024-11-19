@@ -1,5 +1,5 @@
 const Button = ({ className, onClick, children }) => {
-  const classes = `button relative inline-flex items-center justify-center 
+  const classes = `button relative inline-flex items-center justify-center
     ${className || ""}`;
   const spanClasses = "relative z-10";
 
