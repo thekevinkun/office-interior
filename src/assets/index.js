@@ -4,9 +4,9 @@ import kitchenRoom from "../assets/kitchen-room.jpg";
 import livingRoom from "../assets/living-room.jpg";
 import meetingRoom from "../assets/meeting-room.jpg";
 import recreationRoom from "../assets/recreation-room.jpg";
-import work1 from "../assets/work-1.jpg";
-import work2 from "../assets/work-2.jpg";
-import work3 from "../assets/work-3.jpg";
+import blog1 from "../assets/blog-1.jpg";
+import blog2 from "../assets/blog-2.jpg";
+import blog3 from "../assets/blog-3.jpg";
 
 export {
   hero1,
@@ -15,7 +15,7 @@ export {
   livingRoom,
   meetingRoom,
   recreationRoom,
-  work1,
-  work2,
-  work3,
+  blog1,
+  blog2,
+  blog3,
 };
