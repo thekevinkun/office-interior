@@ -20,3 +20,200 @@
     @apply bg-white font-oswald font-light text-black-1 text-base;
   }
 }
+
+.content-1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -9%;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 16px;
+  box-shadow: -10px 10px 0 #fff;
+}
+
+.content-2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -4.6%;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 16px;
+  box-shadow: -10px 10px 0 #fff;
+}
+
+.content-3::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -10.5%;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 16px;
+  box-shadow: -10px 10px 0 #fff;
+}
+
+.content-3::after {
+  content: "";
+  position: absolute;
+  top: -35%;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 16px;
+  box-shadow: -10px 10px 0 #fff;
+}
+
+.button-1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -34%;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 16px;
+  box-shadow: 8px 8px 0 #fff;
+}
+
+.button-1::after {
+  content: "";
+  position: absolute;
+  top: -34%;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 16px;
+  box-shadow: 8px 8px 0 #fff;
+}
+
+.button-2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -34%;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 16px;
+  box-shadow: 8px 8px 0 #fff;
+}
+
+.button-2::after {
+  content: "";
+  position: absolute;
+  top: -34%;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 16px;
+  box-shadow: 8px 8px 0 #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .content-1::before {
+    right: -10%;
+  }
+
+  .content-2::before {
+    right: -5.5%;
+  }
+
+  .content-3::before {
+    right: -12%;
+  }
+
+  .content-3::after {
+    top: -36%;
+  }
+
+  .button-1::before,
+  .button-2::before {
+    left: -33.5%;
+  }
+
+  .button-1::after,
+  .button-2::after {
+    top: -33.5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content-1::before {
+    right: -12.1%;
+  }
+
+  .content-2::before {
+    right: -6.5%;
+  }
+
+  .content-3::before {
+    right: -14.5%;
+  }
+
+  .content-3::after {
+    top: -48%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .content-1::before {
+    right: -14.8%;
+  }
+
+  .content-2::before {
+    right: -8%;
+  }
+
+  .content-3::before {
+    right: -19%;
+  }
+
+  .content-3::after {
+    top: -62%;
+  }
+
+  .button-1::before,
+  .button-2::before {
+    left: -39%;
+  }
+
+  .button-1::after,
+  .button-2::after {
+    top: -39%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content-1::before {
+    right: -17.2%;
+  }
+
+  .content-2::before {
+    right: -9.5%;
+  }
+
+  .content-1::after {
+    content: "";
+    position: absolute;
+    top: -45.5%;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 16px;
+    box-shadow: -10px 10px 0 #fff;
+  }
+
+  .button-1::after,
+  .button-2::after {
+    top: -38%;
+  }
+}

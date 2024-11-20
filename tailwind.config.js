@@ -39,7 +39,7 @@ export default {
           "@apply mx-auto px-5 xl:max-w-[73.5rem]": {},
         },
         ".h1": {
-          "@apply font-semibold text-[1.85rem] leading-[2rem] xs:text-[2.25rem] xs:leading-[2.85rem] sm:text-[2.85rem] sm:leading-[3.25rem] md:text-[3.5rem] md:leading-[4rem] lg:text-[4rem] lg:leading-[4.5rem] tracking-wider":
+          "@apply font-semibold text-[1.85rem] leading-[2.25rem] xs:text-[2.25rem] xs:leading-[2.85rem] sm:text-[2.85rem] sm:leading-[3.25rem] md:text-[3.5rem] md:leading-[4rem] lg:text-[4rem] lg:leading-[4.5rem] tracking-wider":
             {},
         },
         ".button": {
