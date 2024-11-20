@@ -10,11 +10,11 @@ const Hero = () => {
       {/* HERO CONTAINER */}
       <div className="xs:h-full lg:h-[545px] grid gird-cols-2 lg:grid-cols-7 max-[480px]:grid-rows-[1fr,180px] gap-7">
         {/* FIRST HERO IMAGE */}
-        <div className="relative lg:col-span-5 z-10">
+        <div className="card-1 relative lg:col-span-5 z-10">
           <img
             src={hero1}
             alt="Hero"
-            className="w-full h-full object-cover rounded-2xl"
+            className="hero-img-1 relative w-full h-full object-cover rounded-2xl"
           />
 
           <div className="padding-content absolute top-0 left-0">
@@ -27,12 +27,16 @@ const Hero = () => {
             </h3>
           </div>
 
-          <div className="rounded-xl absolute bottom-0 left-0 z-20">
+          <div className="card-item-1 rounded-xl absolute bottom-0 left-0 z-20">
+            <div className="hidden sm:block bg-white w-fit py-3 pr-3 md:py-4 md:pr-4 rounded-tr-2xl">
+              <Tagline className="text-[0.625rem] md:!text-xs lg:!text-sm">
+                We create your dream office
+              </Tagline>
+            </div>
+
             <h1 className="h1 flex flex-col">
-              <span className="bg-white w-fit py-1 pr-4 rounded-r-2xl">
-                Modern
-              </span>
-              <span className="bg-white w-fit py-1 pr-4 rounded-r-2xl">
+              <span className="bg-white w-fit pr-4 rounded-tr-2xl">Modern</span>
+              <span className="bg-white w-fit py-1 pr-4 rounded-tr-2xl">
                 Office Interior
               </span>
             </h1>
@@ -41,7 +45,7 @@ const Hero = () => {
 
         {/* SECOND & THIRD HERO IMAGE */}
         <div className="lg:col-span-2 flex flex-row-reverse lg:flex-col gap-3">
-          <div className="relative w-full h-full bg-[linear-gradient(145deg,rgba(222,222,222,1)30%,rgba(240,240,240,1)70%)] rounded-2xl">
+          <div className="card-2 relative w-full h-full bg-[linear-gradient(145deg,rgba(222,222,222,1)30%,rgba(240,240,240,1)70%)] rounded-2xl">
             <div className="h-full padding-content absolute top-0 left-0 flex flex-col justify-between">
               <div>
                 <Tagline>Client</Tagline>
@@ -60,14 +64,17 @@ const Hero = () => {
               </h2>
             </div>
 
-            <div className="bg-white pt-2 pl-2 absolute bottom-0 right-0 rounded-2xl z-20">
-              <Button className="p-3 bg-black text-[1.25rem] sm:text-[1.65rem] text-white-1 rounded-2xl">
+            <div className="bg-white pt-[7px] pl-[7px] absolute bottom-0 right-0 rounded-tl-2xl z-20">
+              <Button
+                className="p-3 bg-black text-[1.3rem] sm:text-[1.75rem] text-white-1 rounded-2xl
+                  hover:bg-black/85 hover:scale-110 transition-[background-color,transform] duration-300"
+              >
                 <MdOutlineArrowOutward />
               </Button>
             </div>
           </div>
 
-          <div className="w-full h-full relative z-10">
+          <div className="card-3 w-full h-full relative z-10">
             <img
               src={hero2}
               alt="Hero"
@@ -92,8 +99,11 @@ const Hero = () => {
               </h2>
             </div>
 
-            <div className="bg-white pt-2 pl-2 absolute bottom-0 right-0 rounded-2xl z-20">
-              <Button className="p-3 bg-black text-[1.25rem] sm:text-[1.65rem] text-white-1 rounded-2xl">
+            <div className="bg-white pt-[7px] pl-[7px] absolute bottom-0 right-0 rounded-tl-2xl z-20">
+              <Button
+                className="p-3 bg-black text-[1.3rem] sm:text-[1.75rem] text-white-1 rounded-2xl
+                 hover:bg-black/85 hover:scale-110 transition-[background-color,transform] duration-300"
+              >
                 <MdOutlineArrowOutward />
               </Button>
             </div>

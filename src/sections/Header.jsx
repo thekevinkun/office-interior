@@ -20,7 +20,7 @@ const Header = () => {
             Let's talk
           </Button>
 
-          <RiMenu3Line className="text-[1.75rem] cursor-pointer" />
+          <RiMenu3Line className="text-[1.75rem] hover:text-black-1/55 cursor-pointer transition-colors duration-300" />
         </div>
       </div>
     </header>
