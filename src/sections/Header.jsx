@@ -14,7 +14,7 @@ const Header = () => {
 
         <div className="flex items-center gap-3 xs:gap-5">
           <Button
-            className="text-xs sm:text-sm font-normal border border-black rounded-full py-1 px-3 xs:py-[6px] xs:px-5 
+            className="text-xs sm:text-sm font-medium border border-black rounded-full py-1 px-3 xs:py-[6px] xs:px-5 
               hover:bg-black-1 hover:text-white-1 transitions-[background-color] duration-300"
           >
             Let's talk

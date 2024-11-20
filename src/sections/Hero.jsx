@@ -6,7 +6,7 @@ import { hero1, hero2 } from "../assets";
 
 const Hero = () => {
   return (
-    <section className="py-3">
+    <section id="hero" className="py-3">
       {/* HERO CONTAINER */}
       <div className="xs:h-full lg:h-[545px] grid gird-cols-2 lg:grid-cols-7 max-[480px]:grid-rows-[1fr,180px] gap-7">
         {/* FIRST HERO IMAGE */}
@@ -14,13 +14,13 @@ const Hero = () => {
           <img
             src={hero1}
             alt="Hero"
-            className="hero-img-1 relative w-full h-full object-cover rounded-2xl"
+            className="relative w-full h-full object-cover rounded-2xl"
           />
 
           <div className="padding-content absolute top-0 left-0">
             <Tagline>Interior Design</Tagline>
 
-            <h3 className="mt-3 md:mt-5 font-normal text-[1rem] xs:text-lg md:text-2xl text-black-2">
+            <h3 className="mt-3 md:mt-5 font-normal text-[0.875rem] xs:text-[1rem] md:text-lg lg:text-xl text-black-2">
               Make your dream
               <br />
               office come true today!
