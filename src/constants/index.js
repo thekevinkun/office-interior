@@ -1,30 +1,27 @@
 import {
-  hero1,
-  hero2,
   kitchenRoom,
-  livingRoom,
   meetingRoom,
   recreationRoom,
-  work1,
-  work2,
-  work3,
+  blog1,
+  blog2,
+  blog3,
 } from "../assets";
 
 const blog = [
   {
     title: "Top 10 office design we recommend",
     tagline: "Crafting",
-    img: work1,
+    img: blog1,
   },
   {
     title: "Crafting Greatness",
     tagline: "We create your dream",
-    img: work2,
+    img: blog2,
   },
   {
     title: "Get advice of your current office",
     tagline: "Fully consultation",
-    img: work3,
+    img: blog3,
   },
 ];
 

@@ -48,7 +48,7 @@ export default {
       });
       addUtilities({
         ".section__y": {
-          "@apply py-5": {},
+          "@apply py-16 md:py-24": {},
         },
         ".padding-content": {
           "@apply p-3 sm:p-5 md:p-7": {},
