@@ -20,7 +20,7 @@ const Hero = () => {
           <div className="padding-content absolute top-0 left-0">
             <Tagline>Interior Design</Tagline>
 
-            <h3 className="mt-3 md:mt-5 font-normal text-[0.875rem] xs:text-[1rem] md:text-lg lg:text-xl text-black-2">
+            <h3 className="mt-3 md:mt-5 font-normal capitalize text-[0.875rem] xs:text-[1rem] md:text-lg lg:text-xl text-black-2">
               Make your dream
               <br />
               office come true today!
@@ -34,7 +34,7 @@ const Hero = () => {
               </Tagline>
             </div>
 
-            <h1 className="h1 flex flex-col">
+            <h1 className="h1 capitalize flex flex-col">
               <span className="content-1 relative bg-white w-fit py-1 xs:py-0 pr-4 rounded-tr-2xl">
                 Modern
               </span>
@@ -52,14 +52,14 @@ const Hero = () => {
               <div>
                 <Tagline>Client</Tagline>
 
-                <h3 className="mt-3 md:mt-5 font-normal text-xs sm:text-sm md:text-[1rem] md:leading-[1.25rem] lg:text-lg lg:leading-[1.5rem] text-black-2">
+                <h3 className="mt-3 md:mt-5 font-normal capitalize text-xs sm:text-sm md:text-[1rem] md:leading-[1.25rem] lg:text-lg lg:leading-[1.5rem] text-black-2">
                   Become a
                   <br />
                   customer now and win prizes
                 </h3>
               </div>
 
-              <h2 className="font-medium text-xs sm:text-[1rem] sm:leading-[1.5rem] md:text-[1.5rem] md:leading-[2rem] lg:text-[1.85rem] lg:leading-[2.25rem] text-black-2">
+              <h2 className="font-medium capitalize text-xs sm:text-[1rem] sm:leading-[1.5rem] md:text-[1.5rem] md:leading-[2rem] lg:text-[1.85rem] lg:leading-[2.25rem]">
                 Join the interior
                 <br />
                 Design world
@@ -68,7 +68,7 @@ const Hero = () => {
 
             <div className="button-1 bg-white pt-[7px] pl-[7px] absolute bottom-0 right-0 rounded-tl-2xl z-20">
               <Button
-                className="p-3 bg-black text-[1.3rem] sm:text-[1.75rem] text-white-1 rounded-2xl
+                className="p-3 bg-black text-[1.3rem] sm:text-[1.75rem] text-white-2 rounded-2xl
                   hover:bg-black/85 hover:scale-110 transition-[background-color,transform] duration-300"
               >
                 <MdOutlineArrowOutward />
@@ -87,14 +87,14 @@ const Hero = () => {
               <div>
                 <Tagline white={true}>Materials</Tagline>
 
-                <h3 className="mt-3 md:mt-5 font-normal text-xs sm:text-sm md:text-[1rem] md:leading-[1.25rem] lg:text-lg lg:leading-[1.5rem] text-white-2">
+                <h3 className="mt-3 md:mt-5 font-normal capitalize text-xs sm:text-sm md:text-[1rem] md:leading-[1.25rem] lg:text-lg lg:leading-[1.5rem] text-white-2">
                   We use the best
                   <br />
                   materials on the market
                 </h3>
               </div>
 
-              <h2 className="font-medium text-xs sm:text-[1rem] sm:leading-[1.5rem] md:text-[1.5rem] md:leading-[2rem] lg:text-[1.85rem] lg:leading-[2.25rem] text-white-2">
+              <h2 className="font-medium capitalize text-xs sm:text-[1rem] sm:leading-[1.5rem] md:text-[1.5rem] md:leading-[2rem] lg:text-[1.85rem] lg:leading-[2.25rem] text-white-1">
                 High Quality
                 <br />
                 Materials
@@ -103,7 +103,7 @@ const Hero = () => {
 
             <div className="button-2 bg-white pt-[7px] pl-[7px] absolute bottom-0 right-0 rounded-tl-2xl z-20">
               <Button
-                className="p-3 bg-black text-[1.3rem] sm:text-[1.75rem] text-white-1 rounded-2xl
+                className="p-3 bg-black text-[1.3rem] sm:text-[1.75rem] text-white-2 rounded-2xl
                  hover:bg-black/85 hover:scale-110 transition-[background-color,transform] duration-300"
               >
                 <MdOutlineArrowOutward />

@@ -4,8 +4,8 @@ import { livingRoom } from "../assets";
 
 const Ideas = () => {
   return (
-    <section id="ideas" className="section__y">
-      <div className="relative w-full h-[500px]">
+    <section id="ideas" className="!pt-28 section__y">
+      <div className="relative w-full h-[520px]">
         <img
           src={livingRoom}
           alt="Ideas"
@@ -14,7 +14,8 @@ const Ideas = () => {
 
         <div className="absolute top-0 right-0 z-20">
           <h2
-            className="flex flex-col items-end font-normal text-black-2 text-[1.45rem] leading-[1.5rem] xs:text-[1.85rem] xs:leading-[2rem] 
+            className="flex flex-col items-end font-normal capitalize 
+              text-[1.45rem] leading-[1.5rem] xs:text-[1.85rem] xs:leading-[2rem] 
               md:text-[2.25rem] md:leading-[2.25rem] lg:text-[2.75rem] lg:leading-[2.85rem]"
           >
             <span className="content-1 relative w-fit py-1 pl-3 xs:pl-4 md:pl-5 bg-white">
@@ -29,7 +30,10 @@ const Ideas = () => {
         <div className="padding-content absolute top-0 left-0">
           <Tagline>Interior Design</Tagline>
 
-          <h3 className="mt-3 md:mt-5 font-normal text-[0.875rem] xs:text-[1rem] md:text-lg lg:text-xl text-black-2">
+          <h3
+            className="mt-3 md:mt-5 font-normal capitalize 
+            text-[0.875rem] xs:text-[1rem] md:text-lg lg:text-xl text-black-2"
+          >
             Make your dream
             <br />
             office come true today!
