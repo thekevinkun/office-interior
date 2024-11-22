@@ -10,7 +10,7 @@ function App() {
         <Crafts />
         <Blog />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
