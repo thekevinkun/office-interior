@@ -18,7 +18,7 @@ const Blog = () => {
 
           <div className="flex flex-col gap-2">
             <Tagline className="w-fit">Crafting</Tagline>
-            <h3 className="font-normal capitalize">
+            <h3 className="font-normal capitalize text-black-2">
               Top 10 interior design
               <br />
               companies in europe
@@ -60,7 +60,7 @@ const Blog = () => {
         <div className="hidden relative mt-auto col-span-2 lg:flex flex-col gap-5">
           <div className="flex flex-col gap-2">
             <Tagline className="w-fit">Fully consultation</Tagline>
-            <h3 className="font-normal capitalize">
+            <h3 className="font-normal capitalize text-black-2">
               Get advice how
               <br />
               you want the office designed
@@ -90,7 +90,7 @@ const Blog = () => {
 
             <div className="mt-3 flex flex-col gap-2">
               <Tagline className="w-fit">Crafting</Tagline>
-              <h3 className="font-normal capitalize text-sm xs:text-base sm:text-lg">
+              <h3 className="font-normal capitalize text-black-2 text-sm xs:text-base sm:text-lg">
                 Top 10 interior design
                 <br />
                 companies in europe
@@ -110,7 +110,7 @@ const Blog = () => {
 
             <div className="mt-3 flex flex-col gap-2">
               <Tagline className="w-fit">Fully consultation</Tagline>
-              <h3 className="font-normal capitalize text-sm xs:text-base sm:text-lg">
+              <h3 className="font-normal capitalize text-black-2 text-sm xs:text-base sm:text-lg">
                 Get advice how
                 <br />
                 you want the office designed

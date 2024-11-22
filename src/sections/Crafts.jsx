@@ -32,10 +32,10 @@ const Crafts = () => {
               id={craft.id}
               className={`${
                 activeCraft === craft.id &&
-                "bg-black-1 text-white-2 pointer-events-none"
+                "bg-black-1 text-white-1 pointer-events-none"
               }
-                text-xs lg:text-sm capitalize font-normal border border-black rounded-full py-1 px-3 xs:py-[6px] xs:px-5 
-                hover:bg-black-1 hover:text-white-2 transitions-[background-color] duration-300`}
+                text-xs lg:text-sm capitalize font-medium border border-black rounded-full py-1 px-3 xs:py-[6px] xs:px-5 
+                hover:bg-black-1 hover:text-white-1 transitions-[background-color] duration-300`}
               childClass="pointer-events-none"
               onClick={(e) => handleActiveCraft(e)}
             >
@@ -60,7 +60,7 @@ const Crafts = () => {
                 <div className="cart bg-white pt-2 pl-2 absolute bottom-0 right-0 rounded-tl-2xl z-20">
                   <Button
                     className="p-4 bg-black text-[1.25rem] sm:text-[1.5rem] text-white rounded-2xl
-                 hover:bg-black/85 hover:scale-110 transition-[background-color,transform] duration-300"
+                      hover:bg-black/85 hover:scale-110 transition-[background-color,transform] duration-300"
                   >
                     <MdShoppingCart />
                   </Button>
@@ -68,10 +68,10 @@ const Crafts = () => {
               </div>
 
               <div className="mt-4">
-                <h3 className="font-normal text-lg sm:text-xl capitalize">
+                <h3 className="font-normal text-black-2 text-lg sm:text-xl capitalize">
                   {product.title}
                 </h3>
-                <p className="mt-1">{product.price}</p>
+                <p className="mt-1 text-black-2">{product.price}</p>
               </div>
             </div>
           ))}

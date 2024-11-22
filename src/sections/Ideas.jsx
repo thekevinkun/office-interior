@@ -31,8 +31,8 @@ const Ideas = () => {
           <Tagline>Interior Design</Tagline>
 
           <h3
-            className="mt-3 md:mt-5 font-normal capitalize 
-            text-[0.875rem] xs:text-[1rem] md:text-lg lg:text-xl text-black-2"
+            className="mt-3 md:mt-5 font-normal capitalize text-black-2
+            text-[0.875rem] xs:text-[1rem] md:text-lg lg:text-xl"
           >
             Make your dream
             <br />
