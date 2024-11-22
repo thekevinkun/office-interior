@@ -43,12 +43,12 @@ export default {
             {},
         },
         ".button": {
-          "@apply text-xs tracking-wider": {},
+          "@apply text-xs text-black-2 tracking-wider": {},
         },
       });
       addUtilities({
         ".section__y": {
-          "@apply py-16 md:py-24": {},
+          "@apply py-8 sm:py-10 lg:py-16": {},
         },
         ".padding-content": {
           "@apply p-3 sm:p-5 md:p-7": {},

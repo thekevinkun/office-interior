@@ -172,6 +172,32 @@
   box-shadow: -8px 8px 0 #fff;
 }
 
+/* INVERTER BORDER RADIUS FOR CRAFTS */
+
+#crafts .cart::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -31%;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 16px;
+  box-shadow: 8px 8px 0 #fff;
+}
+
+#crafts .cart::after {
+  content: "";
+  position: absolute;
+  top: -32%;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 16px;
+  box-shadow: 8px 8px 0 #fff;
+}
+
 @media screen and (max-width: 1024px) {
   /* INVERTER BORDER RADIUS FOR HERO */
   #hero .content-1::before {
@@ -215,6 +241,15 @@
   }
   #ideas .content-3::after {
     right: -11%;
+  }
+
+  /* INVERTER BORDER RADIUS FOR CRAFTS */
+  #crafts .cart::before {
+    left: -30%;
+  }
+
+  #crafts .cart::after {
+    top: -31%;
   }
 }
 
@@ -280,6 +315,15 @@
   #hero .button-2::after {
     top: -39%;
   }
+
+  /* INVERTER BORDER RADIUS FOR CRAFTS */
+  #crafts .cart::before {
+    left: -32%;
+  }
+
+  #crafts .cart::after {
+    top: -33%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -324,5 +368,14 @@
   }
   #ideas .content-3::after {
     right: -13.5%;
+  }
+
+  /* INVERTER BORDER RADIUS FOR CRAFTS */
+  #crafts .cart::before {
+    left: -33%;
+  }
+
+  #crafts .cart::after {
+    top: -33%;
   }
 }

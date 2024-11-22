@@ -2,6 +2,15 @@ import {
   kitchenRoom,
   meetingRoom,
   recreationRoom,
+  lounge1,
+  lounge2,
+  lounge3,
+  desk1,
+  desk2,
+  desk3,
+  chair1,
+  chair2,
+  chair3,
   blog1,
   blog2,
   blog3,
@@ -25,9 +34,10 @@ const blog = [
   },
 ];
 
-const sells = [
+const crafts = [
   {
-    category: "living room",
+    id: "spaces",
+    category: "work spaces",
     items: [
       {
         title: "Modern kitchen furniture",
@@ -47,65 +57,68 @@ const sells = [
     ],
   },
   {
-    category: "kitchen",
+    id: "lounges",
+    category: "lounges",
     items: [
       {
-        title: "",
-        price: "",
-        img: "",
+        title: "corgan offices - chicago",
+        price: "$10.000",
+        img: lounge1,
       },
       {
-        title: "",
-        price: "",
-        img: "",
+        title: "tabaco offices - london",
+        price: "$11.000",
+        img: lounge2,
       },
       {
-        title: "",
-        price: "",
-        img: "",
+        title: "generali offices - warsaw",
+        price: "$12.000",
+        img: lounge3,
       },
     ],
   },
   {
+    id: "desk",
     category: "desk",
     items: [
       {
-        title: "",
-        price: "",
-        img: "",
+        title: "antenna workspaces",
+        price: "$1.000",
+        img: desk1,
       },
       {
-        title: "",
-        price: "",
-        img: "",
+        title: "saranac",
+        price: "$500",
+        img: desk2,
       },
       {
-        title: "",
-        price: "",
-        img: "",
+        title: "upside",
+        price: "$100",
+        img: desk3,
       },
     ],
   },
   {
+    id: "chairs",
     category: "chairs",
     items: [
       {
-        title: "",
-        price: "",
-        img: "",
+        title: "medinah",
+        price: "$100",
+        img: chair1,
       },
       {
-        title: "",
-        price: "",
-        img: "",
+        title: "kuvi work",
+        price: "$80",
+        img: chair2,
       },
       {
-        title: "",
-        price: "",
-        img: "",
+        title: "island",
+        price: "$50",
+        img: chair3,
       },
     ],
   },
 ];
 
-export { blog, sells };
+export { blog, crafts };
