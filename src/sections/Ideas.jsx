@@ -4,7 +4,7 @@ import { livingRoom } from "../assets";
 
 const Ideas = () => {
   return (
-    <section id="ideas" className="!pt-28 section__y">
+    <section id="ideas" className="!pt-16 sm:!pt-20 lg:!pt-28 section__y">
       <div className="relative w-full h-[520px]">
         <img
           src={livingRoom}
