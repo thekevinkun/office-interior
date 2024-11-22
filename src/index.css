@@ -21,6 +21,9 @@
   }
 }
 
+
+/* CSS TO MAKE INVERTED BORDER RADIUS ON EACH IMAGE */
+
 /* INVERTER BORDER RADIUS FOR HERO */
 #hero .content-1::before {
   content: "";
@@ -199,6 +202,55 @@
   box-shadow: 8px 8px 0 #fff;
 }
 
+/* INVERTER BORDER RADIUS FOR BLOG */
+#blog .content-1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -11.5%;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 16px;
+  box-shadow: -10px 10px 0 #fff;
+}
+
+#blog .content-2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -9%;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 16px;
+  box-shadow: -10px 10px 0 #fff;
+}
+
+#blog .content-3::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -12.5%;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 16px;
+  box-shadow: -10px 10px 0 #fff;
+}
+
+#blog .content-3::after {
+  content: "";
+  position: absolute;
+  top: -38.5%;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 16px;
+  box-shadow: -10px 10px 0 #fff;
+}
+
 @media screen and (max-width: 1024px) {
 
   /* INVERTER BORDER RADIUS FOR HERO */
@@ -254,6 +306,23 @@
   #crafts .cart::after {
     top: -31%;
   }
+
+  /* INVERTER BORDER RADIUS FOR BLOG */
+  #blog .content-1::before {
+    right: -11.5%;
+  }
+
+  #blog .content-2::before {
+    right: -9.5%;
+  }
+
+  #blog .content-3::before {
+    right: -14%;
+  }
+
+  #blog .content-3::after {
+    top: -42%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -291,6 +360,23 @@
 
   #ideas .content-3::after {
     right: -11.5%;
+  }
+
+  /* INVERTER BORDER RADIUS FOR BLOG */
+  #blog .content-1::before {
+    right: -12.5%;
+  }
+
+  #blog .content-2::before {
+    right: -11%;
+  }
+
+  #blog .content-3::before {
+    right: -17%;
+  }
+
+  #blog .content-3::after {
+    top: -48%;
   }
 }
 
@@ -330,6 +416,23 @@
 
   #crafts .cart::after {
     top: -33%;
+  }
+
+  /* INVERTER BORDER RADIUS FOR BLOG */
+  #blog .content-1::before {
+    right: -15%;
+  }
+
+  #blog .content-2::before {
+    right: -12.5%;
+  }
+
+  #blog .content-3::before {
+    right: -22%;
+  }
+
+  #blog .content-3::after {
+    top: -62%;
   }
 }
 
@@ -386,5 +489,22 @@
 
   #crafts .cart::after {
     top: -33%;
+  }
+
+  /* INVERTER BORDER RADIUS FOR BLOG */
+  #blog .content-1::before {
+    right: -18%;
+  }
+
+  #blog .content-2::before {
+    right: -15%;
+  }
+
+  #blog .content-3::before {
+    right: -24%;
+  }
+
+  #blog .content-3::after {
+    top: -72%;
   }
 }

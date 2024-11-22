@@ -8,7 +8,7 @@ function App() {
         <Hero />
         <Ideas />
         <Crafts />
-        {/* <Blog /> */}
+        <Blog />
       </main>
       {/* <Footer /> */}
     </div>
