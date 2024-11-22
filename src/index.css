@@ -167,6 +167,7 @@
   left: -10%;
   box-shadow: 8px 8px 0 #fff;
 }
+
 #ideas .content-3::after {
   right: -10%;
   box-shadow: -8px 8px 0 #fff;
@@ -199,6 +200,7 @@
 }
 
 @media screen and (max-width: 1024px) {
+
   /* INVERTER BORDER RADIUS FOR HERO */
   #hero .content-1::before {
     right: -10%;
@@ -218,12 +220,12 @@
 
   #hero .button-1::before,
   #hero .button-2::before {
-    left: -33.5%;
+    left: -33%;
   }
 
   #hero .button-1::after,
   #hero .button-2::after {
-    top: -33.5%;
+    top: -33%;
   }
 
   /* INVERTER BORDER RADIUS FOR IDEAS */
@@ -239,6 +241,7 @@
   #ideas .content-3::before {
     left: -10.5%;
   }
+
   #ideas .content-3::after {
     right: -11%;
   }
@@ -254,6 +257,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
   /* INVERTER BORDER RADIUS FOR HERO */
   #hero .content-1::before {
     right: -12.1%;
@@ -276,6 +280,7 @@
   #ideas .content-1::after {
     left: -10.5%;
   }
+
   #ideas .content-2::before {
     bottom: -42%;
   }
@@ -283,12 +288,14 @@
   #ideas .content-3::before {
     left: -11.5%;
   }
+
   #ideas .content-3::after {
     right: -11.5%;
   }
 }
 
 @media screen and (max-width: 640px) {
+
   /* INVERTER BORDER RADIUS FOR HERO */
   #hero .content-1::before {
     right: -14.8%;
@@ -308,12 +315,12 @@
 
   #hero .button-1::before,
   #hero .button-2::before {
-    left: -39%;
+    left: -38%;
   }
 
   #hero .button-1::after,
   #hero .button-2::after {
-    top: -39%;
+    top: -38%;
   }
 
   /* INVERTER BORDER RADIUS FOR CRAFTS */
@@ -327,6 +334,7 @@
 }
 
 @media screen and (max-width: 480px) {
+
   /* INVERTER BORDER RADIUS FOR HERO */
   #hero .content-1::before {
     right: -17.2%;
@@ -366,6 +374,7 @@
   #ideas .content-3::before {
     left: -13.5%;
   }
+
   #ideas .content-3::after {
     right: -13.5%;
   }

@@ -66,7 +66,7 @@ const Hero = () => {
               </h2>
             </div>
 
-            <div className="button-1 bg-white pt-[7px] pl-[7px] absolute bottom-0 right-0 rounded-tl-2xl z-20">
+            <div className="button-1 bg-white pt-2 pl-2 absolute bottom-0 right-0 rounded-tl-2xl z-20">
               <Button
                 className="p-3 bg-black text-[1.3rem] sm:text-[1.75rem] text-white-2 rounded-2xl
                   hover:bg-black/85 hover:scale-110 transition-[background-color,transform] duration-300"
@@ -101,7 +101,7 @@ const Hero = () => {
               </h2>
             </div>
 
-            <div className="button-2 bg-white pt-[7px] pl-[7px] absolute bottom-0 right-0 rounded-tl-2xl z-20">
+            <div className="button-2 bg-white pt-2 pl-2 absolute bottom-0 right-0 rounded-tl-2xl z-20">
               <Button
                 className="p-3 bg-black text-[1.3rem] sm:text-[1.75rem] text-white-2 rounded-2xl
                  hover:bg-black/85 hover:scale-110 transition-[background-color,transform] duration-300"
