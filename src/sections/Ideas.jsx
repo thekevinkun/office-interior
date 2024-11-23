@@ -12,7 +12,7 @@ const Ideas = () => {
       id="ideas"
       className="!pt-16 sm:!pt-20 lg:!pt-28 section__y overflow-hidden"
     >
-      <div className="relative w-full h-[520px]">
+      <div className="relative w-full h-[345px] sm:h-[380px] md:h-[450px] lg:h-[520px]">
         <img
           src={livingRoom}
           alt="Ideas"

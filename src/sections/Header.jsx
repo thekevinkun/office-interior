@@ -10,11 +10,11 @@ const Header = () => {
     <motion.header initial="hidden" animate="visible">
       <motion.div
         variants={slideInFromTop(-100, 0.5, 1)}
-        className="py-5 flex items-center justify-between"
+        className="py-5 flex sm:items-center justify-between"
       >
         <a
           href="/"
-          className="font-semibold text-[1.25rem] xs:text-[1.45rem] tracking-wider"
+          className="font-semibold text-[1.15rem] xs:text-[1.25rem] sm:text-[1.45rem] tracking-wider"
         >
           Office Interior
         </a>

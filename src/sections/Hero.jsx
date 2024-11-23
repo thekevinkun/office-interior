@@ -16,9 +16,12 @@ import { hero1, hero2 } from "../assets";
 
 const Hero = () => {
   return (
-    <section id="hero" className="py-3">
+    <section
+      id="hero"
+      className="py-3 h-[calc(100svh-86px)] sm:h-full lg:h-[calc(100svh-86px)]"
+    >
       {/* HERO CONTAINER */}
-      <div className="xs:h-full lg:h-[545px] grid gird-cols-2 lg:grid-cols-7 max-[480px]:grid-rows-[1fr,180px] gap-7">
+      <div className="h-full grid gird-cols-2 lg:grid-cols-7 max-[480px]:grid-rows-[1fr,180px] gap-7">
         {/* FIRST HERO IMAGE */}
         <div className="relative lg:col-span-5 z-10">
           <motion.img
@@ -80,7 +83,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="lg:col-span-2 flex flex-row-reverse lg:flex-col gap-3">
+        <div className="h-full lg:col-span-2 flex flex-row-reverse lg:flex-col gap-3">
           {/* SECOND HERO CONTENT */}
           <motion.div
             initial="hidden"
