@@ -1,10 +1,17 @@
+import { motion } from "motion/react";
+
 import { Button } from "../components";
 import { RiMenu3Line } from "react-icons/ri";
 
+import { slideInFromTop } from "../constants/motion";
+
 const Header = () => {
   return (
-    <header>
-      <div className="py-5 flex items-center justify-between">
+    <motion.header initial="hidden" animate="visible">
+      <motion.div
+        variants={slideInFromTop(-100, 0.5, 1)}
+        className="py-5 flex items-center justify-between"
+      >
         <a
           href="/"
           className="font-semibold text-[1.25rem] xs:text-[1.45rem] tracking-wider"
@@ -22,8 +29,8 @@ const Header = () => {
 
           <RiMenu3Line className="text-[1.75rem] text-black hover:text-black/55 cursor-pointer transition-colors duration-300" />
         </div>
-      </div>
-    </header>
+      </motion.div>
+    </motion.header>
   );
 };
 

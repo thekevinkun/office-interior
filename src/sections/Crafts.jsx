@@ -1,8 +1,14 @@
 import { useState } from "react";
+import { motion } from "motion/react";
 
 import { Button } from "../components";
 
 import { crafts } from "../constants";
+import {
+  slideInFromBottom,
+  slideInFromTop,
+  slideInFromRight,
+} from "../constants/motion";
 
 import { MdShoppingCart } from "react-icons/md";
 
@@ -14,18 +20,28 @@ const Crafts = () => {
   };
 
   return (
-    <section id="crafts" className="section__y">
+    <section id="crafts" className="section__y overflow-hidden">
       <div className="w-full flex flex-col md:flex-row md:items-end md:justify-between gap-7 md:gap-0">
-        <h2
+        <motion.h2
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={slideInFromTop(-15, 0.75, 1)}
           className="font-normal capitalize text-[1.5rem] leading-[2.45rem] xs:text-[1.75rem] xs:leading-[2.65rem] 
               lg:text-[2.25rem] lg:leading-[3.5rem]"
         >
           designed and crafted with
           <br />
           high quality materials
-        </h2>
+        </motion.h2>
 
-        <div className="flex items-center gap-3">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={slideInFromRight(0.75, 1)}
+          className="flex items-center gap-3"
+        >
           {crafts.map((craft) => (
             <Button
               key={craft.id}
@@ -42,10 +58,16 @@ const Crafts = () => {
               {craft.category}
             </Button>
           ))}
-        </div>
+        </motion.div>
       </div>
 
-      <div className="mt-8 md:mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 sm:gap-10">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={slideInFromBottom(100, 0.75, 1)}
+        className="mt-8 md:mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 sm:gap-10"
+      >
         {crafts
           .find((item) => item.id === activeCraft)
           .items.map((product) => (
@@ -75,7 +97,7 @@ const Crafts = () => {
               </div>
             </div>
           ))}
-      </div>
+      </motion.div>
     </section>
   );
 };

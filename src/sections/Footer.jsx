@@ -1,8 +1,19 @@
+import { motion } from "motion/react";
+
 import { Button } from "../components";
+
+import { slideInFromBottom } from "../constants/motion";
 
 const Footer = () => {
   return (
-    <footer id="footer" className="section__y">
+    <motion.footer
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={slideInFromBottom(100, 0.5, 1)}
+      id="footer"
+      className="section__y"
+    >
       <div className="pb-4 sm:pb-5 w-full flex items-end justify-between">
         <div className="flex flex-col gap-1">
           <p className="text-black-2 text-sm sm:text-base lg:text-lg">
@@ -67,7 +78,7 @@ const Footer = () => {
           </Button>
         </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 

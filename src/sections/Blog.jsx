@@ -1,13 +1,29 @@
+import { motion } from "motion/react";
+
 import { Button, Tagline } from "../components";
+
+import {
+  fadeIn,
+  slideInFromBottom,
+  slideInFromLeft,
+  slideInFromRight,
+  slideInFromTop,
+} from "../constants/motion";
 
 import { blog1, blog2, blog3 } from "../assets";
 
 const Blog = () => {
   return (
-    <section id="blog" className="section__y">
+    <section id="blog" className="section__y overflow-hidden">
       <div className="flex flex-col gap-0 lg:grid lg:grid-cols-10 lg:gap-4">
         {/* FIRST BLOG */}
-        <div className="hidden lg:flex flex-col gap-5 relative col-span-2">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={slideInFromTop(-25, 0.75, 1)}
+          className="hidden lg:flex flex-col gap-5 relative col-span-2"
+        >
           <div className="w-full h-[220px]">
             <img
               src={blog1}
@@ -24,10 +40,16 @@ const Blog = () => {
               companies in europe
             </h3>
           </div>
-        </div>
+        </motion.div>
 
         {/* SECOND BLOG */}
-        <div className="relative col-span-6 flex flex-col">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeIn(0.75, 1)}
+          className="relative col-span-6 flex flex-col"
+        >
           <img
             src={blog2}
             alt="Second blog"
@@ -54,10 +76,16 @@ const Blog = () => {
               </span>
             </h2>
           </div>
-        </div>
+        </motion.div>
 
         {/* THIRD BLOG */}
-        <div className="hidden relative mt-auto col-span-2 lg:flex flex-col gap-5">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={slideInFromBottom(25, 0.75, 1)}
+          className="hidden relative mt-auto col-span-2 lg:flex flex-col gap-5"
+        >
           <div className="flex flex-col gap-2">
             <Tagline className="w-fit">Fully consultation</Tagline>
             <h3 className="font-normal capitalize text-black-2">
@@ -74,12 +102,18 @@ const Blog = () => {
               className="w-full h-full object-cover rounded-2xl"
             />
           </div>
-        </div>
+        </motion.div>
 
         {/* BLOG MOBILE */}
         <div className="lg:hidden mt-10 flex gap-3 xs:gap-5">
           {/* FIRST BLOG MOBILE */}
-          <div className="flex flex-col">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={slideInFromLeft(0.75, 1)}
+            className="flex flex-col"
+          >
             <div className="w-full h-full">
               <img
                 src={blog1}
@@ -96,10 +130,16 @@ const Blog = () => {
                 companies in europe
               </h3>
             </div>
-          </div>
+          </motion.div>
 
           {/* THIRD BLOG MOBILE */}
-          <div className="flex flex-col">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={slideInFromRight(0.75, 1)}
+            className="flex flex-col"
+          >
             <div className="w-full h-full">
               <img
                 src={blog3}
@@ -116,7 +156,7 @@ const Blog = () => {
                 you want the office designed
               </h3>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
